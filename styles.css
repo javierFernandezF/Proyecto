@@ -13,15 +13,45 @@ header {
 }
 main {
   height: 90vh;
-  background-color: rgb(53, 40, 40);
+  background-color: #5398ff;
+  padding: 5%;
 }
 .soluciones {
-  height: 50vh;
-  background-color: rgb(255, 8, 8);
+  height: 50%;
+  background-color: #5398ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+  margin: 0% 15%;
+  color: white;
+}
+.titulo-soluciones {
+  font-size: 1.2rem;
+}
+.p-soluciones {
+  font-size: 0.8rem;
+}
+.imagen-soluciones1 {
+  background-image: url(/Materiales/oficina.png);
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: center;
+}
+.imagen-soluciones2 {
+  background-image: url(/Materiales/voluntariado.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  back
 }
 .oportunidades {
-  height: 40vh;
-  background-color: rgb(98, 49, 179);
+  height: 40%;
+  background-color: #fafafa;
+  margin: 5% 15%;
+  
+}
+.titulo-oportunidades {
+  
 }
 .noticias {
   height: 40vh;
