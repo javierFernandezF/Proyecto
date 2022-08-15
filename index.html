@@ -20,15 +20,29 @@
     <nav class="navStyle">
         <img src="./Materiales/logo.png">
         <ul>
-          <li>Nosotros</li>
-          <li>Noticias</li>
-          <li>Ayuda</li>
+          <li><a href=#SolucionesID>Nosotros</a></li>
+          <li><a href=#NoticiasID>Noticias</a></li>
+          <li><a href=#ayudaID>Ayuda</a></li>
         </ul>
-        <button type="login">INGRESAR</button>
+        <button type="login" id="botonID">INGRESAR</button>
     </nav>
+    <!--Modal-->
+    <div id="modalID" class="modalStyle">
+      <div>
+        <img src="./Materiales/imagen-modal.JPG">
+      </div> 
+      <div>
+        <span class="close">&times;</span>
+        <h1>REGISTAR</h1>      
+      </div>
+      
+      
+    </div>
+  
     <header>juan</header>
+    
     <main>
-      <div class="soluciones">Javi</div>
+      <div class="soluciones" id="SolucionesID">Javi</div>
       <div class="oportunidades">Javi</div>
     </main>
     <div class="noticias">Nico</div>
@@ -39,5 +53,7 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./script.js"></script>
   </body>
 </html>
