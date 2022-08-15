@@ -36,11 +36,43 @@ footer {
   background-color: rgb(145, 50, 22);
 }
 
-nav ul {
-  list-style: none;
-  text-align: center;
+.navStyle {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 2fr 4fr 5fr 5fr 2fr 2fr;
+  grid-template-rows: auto;
+  align-items: center;
 }
 
-nav li {
-  font-family: ;
+.navStyle img {
+  width: 150px;
+  height: auto;
+  grid-column: 2;
+}
+
+.navStyle ul {
+  grid-column: 3;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.navStyle li {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: bold;
+  display: inline-block;
+  padding: auto 20px;
+}
+
+.navStyle button {
+  grid-column: 5;
+  background-color: #5227CC;
+  color: white;
+  border-radius: 20px;
+  border-color: #5227CC;
+  height: 30px;
+  width: 120px;
+  
 }
