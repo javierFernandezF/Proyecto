@@ -214,6 +214,7 @@ footer {
 }
 .granboton-texto {
   padding: 0px 10px;
+  height: 100px;
 }
 .flecha {
   border: none;
@@ -221,5 +222,5 @@ footer {
   position: relative;
   opacity: 0.5;
   left: 170px;
-  top: 7px;
+  top: -15px;
 }
