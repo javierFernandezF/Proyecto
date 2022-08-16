@@ -28,10 +28,63 @@ main {
   background-color: rgb(47, 177, 7);
 }
 .contacto {
+  margin: 10% 10% 10% 10%;
   height: 40vh;
-  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 50fr 50fr;
 }
+
 footer {
-  height: 20vh;
-  background-color: rgb(145, 50, 22);
+  height: 25.1vh;
+  display: grid;
+  grid-template-rows: 1vh 19.9vh 4vh;
+  row-gap: 0.1vh;
+  color: white;
+}
+footer p {
+  margin: 0;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.seguinosfooter li {
+  float: left;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 0.2vh;
+}
+footer li a:hover {
+  color: gray;
+}
+.lineafooter {
+  background-color: #5227cc;
+}
+.navfooter {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: 30fr 80fr 30fr;
+  background: linear-gradient(90deg, #7749f8 0%, #5227cc 100%);
+}
+.logofooter {
+  margin-top: 4vh;
+  margin-left: 10vh;
+  align-items: center;
+}
+.nosotrosfooter {
+  margin-top: 4vh;
+  margin-left: 5vh;
+}
+.seguinosfooter{
+  margin-top: 4vh;
+  margin-right: 10vh;
+}
+.copyright {
+  color: #5227cc;
+  background: linear-gradient(90deg, #7749f8 0%, #5227cc 100%);
+  text-align: center;
 }
