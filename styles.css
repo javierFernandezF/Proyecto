@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
 main {
@@ -18,16 +19,111 @@ header {
 }
 main {
   height: 90vh;
-  background-color: rgb(53, 40, 40);
+  /* background-color: #5398ff; */
+  padding: 5%;
 }
 .soluciones {
-  height: 50vh;
-  background-color: rgb(255, 8, 8);
+  height: 90vh;
+  background-color: #5398ff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: white;
+  padding: 5% 15%;
+  gap: 5%;
+}
+.contenido-soluciones {
+  min-width: 365px;
+}
+.titulo-soluciones {
+  font-size: 1.2rem;
+  padding: 10% 0% 0% 0%;
+}
+.p-soluciones {
+  font-size: 0.8rem;
+  padding: 10% 0%;
+}
+.imagen-soluciones1 {
+  background-image: url(/Materiales/oficina.png);
+  background-repeat: no-repeat;
+  background-size: 140%;
+  background-position: center;
+}
+.imagen-soluciones2 {
+  background-image: url(/Materiales/voluntariado.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 .oportunidades {
-  height: 40vh;
-  background-color: rgb(98, 49, 179);
+  height: 50vh;
+  text-align: center;
+  padding: 2% 15%;
+  background-color: #fafafa;
+  display: grid;
+  grid-template-rows: 1fr 2fr 5fr;
 }
+.titulo-oportunidades {
+  font-size: 1.3rem;
+}
+.p-oportunidades {
+  font-size: 0.8rem;
+  padding: 2% 12% 0% 12%;
+}
+
+.caja-oportunidades {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2%;
+}
+.caja {
+  border-radius: 15px;
+  border: none;
+  min-width: 180px;
+  min-height: 180px;
+}
+.icono {
+  max-width: 50px;
+  position: relative;
+  right: 40px;
+}
+.icono-rojo {
+  width: 23px;
+}
+.rojo {
+  background-color: #dc3546;
+}
+.amarillo {
+  background-color: #fb9b08;
+}
+.verde {
+  background-color: #429a00;
+}
+.celeste {
+  background-color: #17a2b7;
+}
+.mas {
+  width: 10%;
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+}
+.mas-llamados {
+  width: 10%;
+  position: relative;
+  left: 40px;
+  bottom: 6px;
+}
+
+.caja p {
+  color: white;
+  position: relative;
+  top: 35px;
+  font-size: 1.2rem;
+  right: 20px;
+}
+
 .noticias {
   height: 40vh;
   background-color: rgb(47, 177, 7);
