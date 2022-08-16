@@ -2,14 +2,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
 }
 nav {
   height: 10vh;
   background-color: blue;
 }
 header {
-  height: 40vh;
-  background-color: brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/Proyecto/Materiales/manos.jpg);
+  height:73vh;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header-titulo {
+  color: white;
+  text-align: center;
+  font-weight: normal;
+}
+.header-parrafo {
+  color: white;
+  text-align: center;
+  font-weight: normal;
 }
 main {
   height: 90vh;
