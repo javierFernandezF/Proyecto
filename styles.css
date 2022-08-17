@@ -17,10 +17,11 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/Proyecto/Materiales/manos.jpg);
+  background-image: url(/Materiales/manos.jpg);
   height:73vh;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-titulo {
   color: white;
@@ -87,7 +88,6 @@ main {
 
 .caja-oportunidades {
   width: 100%;
-
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2%;
@@ -144,12 +144,127 @@ main {
   background-color: rgb(47, 177, 7);
 }
 .contacto {
+  padding: 5% 10% 10% 10%;
   height: 40vh;
-  background-color: rgb(0, 0, 0);
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+  background-color: #fafafa;
+  gap: 10px;
+}
+.fotocontacto {
+  background-image: url(/Materiales/laptop-escritorio.jpg);
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.inputscontacto {
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+.row1contacto {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+}
+.row2col1contacto {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+.row2col2contacto {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+.row3contacto {
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inputscontacto p{
+  margin: 5px 0;
+}
+.inputscontacto h2 {
+  margin: 5px 0;
+  text-align: center;
+}
+.inputscontacto input {
+  width: 300px;
+  border: rgb(180, 178, 178) solid 1px;
+  border-radius: 8px;
+}
+.buttoncontacto {
+  border: none;
+  color: white;
+  background-color: #5227cc;
+  padding: 3px 20px;
+  border-radius: 20px;
+  font-weight: 300;
+  width: 100px;
+  margin: 5px;
+}
+.mensajecontacto {
+  height: 85px;
+  resize: none;
+  border-radius: 8px;
+  width: 300px;
+  border: rgb(180, 178, 178) solid 1px;
 }
 footer {
-  height: 20vh;
-  background-color: rgb(145, 50, 22);
+  height: 25.15vh;
+  display: grid;
+  grid-template-rows: 1vh 19.9vh 4vh;
+  row-gap: 0.15vh;
+  color: white;
+}
+footer p {
+  margin: 0;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.seguinosfooter li {
+  float: left;
+}
+footer li a {
+  text-decoration: none;
+  color: white;
+  /* display: block; */
+  padding: 0.2vh;
+}
+footer li a:hover {
+  color: gray;
+}
+.lineafooter {
+  background-color: #5227cc;
+}
+.navfooter {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: 30fr 80fr 30fr;
+  background: linear-gradient(90deg, #7749f8 0%, #5227cc 100%);
+}
+.logofooter {
+  margin-top: 4vh;
+  margin-left: 10vh;
+  align-items: center;
+}
+.nosotrosfooter {
+  margin-top: 4vh;
+  margin-left: 5vh;
+}
+.seguinosfooter{
+  margin-top: 4vh;
+  margin-right: 10vh;
+}
+.copyright {
+  color: #5227cc;
+  background: linear-gradient(90deg, #7749f8 0%, #5227cc 100%);
+  text-align: center;
 }
 
 .navStyle {
@@ -334,4 +449,95 @@ footer {
   opacity: 0.5;
   left: 170px;
   top: -15px;
+}
+@media (max-width: 700px) {
+  #app {
+    width: 390px;
+  }
+  .contacto {
+    padding: 5% 10% 10% 10%;
+    grid-template-rows: 5fr 5fr;
+    width: 100vw;
+    grid-template-columns: 50fr;
+    height: 80vh;
+  }
+  .fotocontacto {
+    background-image: url(/Materiales/laptop-escritorio.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .inputscontacto {
+    display: grid;
+    grid-template-rows: 15% 35% 35% 15%;
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .row1contacto {
+    grid-row: 1 / 2;
+    grid-column: 1;
+  }
+  .row2col1contacto {
+    grid-row: 2 / 3;
+    grid-column: 1;
+  }
+  .row2col2contacto {
+    grid-row: 3 / 4;
+    grid-column: 1;
+  }
+  .row3contacto {
+    grid-row: 4 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  footer {
+    height: 35vh;
+    display: grid;
+    grid-template-rows: 10% 80% 10%;
+    row-gap: 0.15vh;
+    color: white;
+  }
+  .navfooter {
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .logofooter {
+    margin-top: 20px;
+    margin-left: 0;
+    align-items: center;
+  }
+  .nosotrosfooter {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .seguinosfooter{
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .oportunidades {
+    height: 150vh;
+    grid-template-rows: 0.5fr 1fr 7fr;
+  }
+  .caja-oportunidades {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2%;
+  }
+  .caja {
+    border-radius: 15px;
+    border: none;
+    min-width: 180px;
+    min-height: 180px;
+  }
+  .soluciones {
+    height: 150vh;
+    grid-template-columns: 1fr;
+    padding: 0;
+    gap: 10px;
+  }
+
 }
