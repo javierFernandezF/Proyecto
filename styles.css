@@ -17,7 +17,7 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url(/Materiales/manos.jpg);
+  background-image: url(./Materiales/manos.jpg);
   height: 73vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,13 +59,13 @@ main {
   padding: 10% 0%;
 }
 .imagen-soluciones1 {
-  background-image: url(/Materiales/oficina.png);
+  background-image: url(./Materiales/oficina.png);
   background-repeat: no-repeat;
   background-size: 140%;
   background-position: center;
 }
 .imagen-soluciones2 {
-  background-image: url(/Materiales/voluntariado.jpg);
+  background-image: url(./Materiales/voluntariado.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -140,9 +140,32 @@ main {
 }
 
 .noticias {
-  height: 40vh;
-  background-color: rgb(47, 177, 7);
+  height: 50vh;
+  background-color: #5597ff;
 }
+
+.notiContGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+  height: 100%;
+  width: 100%;
+  padding: 70px 200px 30px 200px;
+  column-gap: 3%;
+}
+
+.notiNoti {
+  grid-row: 1;
+  grid-column: ;
+}
+
+.notiLink {
+  grid-row: 2;
+  grid-column: 2 / span 2;
+  justify-self: center;
+  align-self: center;
+}
+
 .contacto {
   padding: 5% 10% 10% 10%;
   height: 40vh;
@@ -152,7 +175,7 @@ main {
   gap: 10px;
 }
 .fotocontacto {
-  background-image: url(/Materiales/laptop-escritorio.jpg);
+  background-image: url(./Materiales/laptop-escritorio.jpg);
   object-fit: cover;
   background-size: 100%;
   background-repeat: no-repeat;
@@ -460,7 +483,7 @@ footer li a:hover {
     height: 80vh;
   }
   .fotocontacto {
-    background-image: url(/Materiales/laptop-escritorio.jpg);
+    background-image: url(./Materiales/laptop-escritorio.jpg);
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
