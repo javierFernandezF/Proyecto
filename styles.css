@@ -139,24 +139,30 @@ main {
   right: 20px;
 }
 
+/*aca arranca css de nico*/
+
 .noticias {
-  height: 50vh;
+  height: 53vh;
   background-color: #5597ff;
 }
 
 .notiContGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 6fr 1fr;
   height: 100%;
   width: 100%;
   padding: 70px 200px 30px 200px;
-  column-gap: 3%;
+  column-gap: 2%;
 }
 
 .notiNoti {
   grid-row: 1;
-  grid-column: ;
+  grid-column: 2 / span 2;
+  justify-self: center;
+  align-self: center;
+  font-weight: 580;
+  margin: 0px;
 }
 
 .notiLink {
@@ -165,6 +171,32 @@ main {
   justify-self: center;
   align-self: center;
 }
+
+.notiPunti {
+  grid-row: 4;
+  grid-column: 2 / span 2;
+  justify-self: center;
+  font-weight: 5000;
+  font-size: xx-large;
+}
+
+.notiCard {
+  grid-row: 3;
+  grid-column: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 0.3fr 0.5fr 0.3fr;
+}
+
+.notiCard .notiImage1 {
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 100%;
+  height: auto;
+  position: fixed;
+}
+
+/*aca termina css de nico*/
 
 .contacto {
   padding: 5% 10% 10% 10%;
