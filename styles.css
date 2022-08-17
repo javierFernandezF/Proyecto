@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
 }
 
 main {
@@ -18,7 +18,7 @@ header {
   flex-direction: column;
   justify-content: center;
   background-image: url(/Materiales/manos.jpg);
-  height:73vh;
+  height: 73vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -183,7 +183,7 @@ main {
   align-items: center;
   justify-content: center;
 }
-.inputscontacto p{
+.inputscontacto p {
   margin: 5px 0;
 }
 .inputscontacto h2 {
@@ -257,7 +257,7 @@ footer li a:hover {
   margin-top: 4vh;
   margin-left: 5vh;
 }
-.seguinosfooter{
+.seguinosfooter {
   margin-top: 4vh;
   margin-right: 10vh;
 }
@@ -291,7 +291,7 @@ footer li a:hover {
 }
 
 .navStyle li {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: bold;
   display: inline-block;
   padding: auto 20px;
@@ -304,13 +304,12 @@ footer li a:hover {
 
 .navStyle button {
   grid-column: 5;
-  background-color: #5227CC;
+  background-color: #5227cc;
   color: white;
   border-radius: 20px;
-  border-color: #5227CC;
+  border-color: #5227cc;
   height: 30px;
   width: 120px;
-  
 }
 
 .modalStyle {
@@ -347,13 +346,12 @@ footer li a:hover {
   grid-template-columns: 1fr 1fr;
 }
 
-
 .ventana-emergente-foto {
   background-image: url(./Materiales/imagen-modal.JPG);
   background-size: cover;
   background-color: white;
   border-radius: 9px 0px 0px 9px;
- /* z-index: -1;*/
+  /* z-index: -1;*/
 }
 .ventana-emergente-opciones {
   background-color: #fafafa;
@@ -513,7 +511,7 @@ footer li a:hover {
     margin-top: 0;
     margin-left: 0;
   }
-  .seguinosfooter{
+  .seguinosfooter {
     margin-top: 0;
     margin-right: 0;
   }
@@ -534,10 +532,26 @@ footer li a:hover {
     min-height: 180px;
   }
   .soluciones {
-    height: 150vh;
+    height: 120vh;
     grid-template-columns: 1fr;
-    padding: 0;
-    gap: 10px;
+    grid-template-rows: 1fr 0.1fr 1fr 0.1fr;
+    padding: 0%;
+    padding-top: 10%;
+    gap: 0px;
+  }
+  .texto-soluciones {
+    width: auto;
+    height: auto;
+    padding-left: 10px;
   }
 
+  .imagen-soluciones2 {
+    grid-row: 3/4;
+    width: auto;
+    height: auto;
+  }
+  .imagen-soluciones1 {
+    width: auto;
+    height: auto;
+  }
 }
